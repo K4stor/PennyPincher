@@ -51,14 +51,9 @@ public class PennyPincher {
         var d: CGFloat = 0.0
         var v = [CGPoint]()
         var prev = points.first!
-        var index = 0
+        var index = 1
         
         for _ in points {
-            if index == 0 {
-                index += 1
-                continue
-            }
-            
             let thisPoint = points[index]
             let prevPoint = points[index - 1]
             
